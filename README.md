@@ -1,3 +1,3 @@
 # 24B1837-Build-your-own-GPT-bot
 
-Untitled design.gif
+https://github.com/gargs13/24B1837-Build-your-own-GPT-bot/blob/main/Untitled%20design.gif
