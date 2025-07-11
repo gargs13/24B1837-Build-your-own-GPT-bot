@@ -14,13 +14,12 @@ def read(pdf):
     return text
 
 def get_relevant_chunk(pdf_text, question, max_chars=2000):
-    # crude way to find relevance: look for paragraphs containing words from the question
     keywords = question.lower().split()
     paragraphs = pdf_text.split("\n\n")
     relevant = [p for p in paragraphs if any(word in p.lower() for word in keywords)]
     combined = "\n\n".join(relevant)
-    return combined[:max_chars]  # truncate to fit token limit
-
+    return combined[:max_chars] 
+    
 pdf = read("C:\\Users\\Gargi Joshi\\Build-your-own-GPT-bot\\week_8\\Indian Laws Overview.pdf")
 
 
